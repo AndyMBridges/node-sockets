@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Node Sockets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      .content {
+        margin: 0 auto;
+        max-width: 800px;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+      }
+      #buttons {
+        width:300px;
+        margin:0 auto;
+      }
+      #buttons button.disabled {
+          pointer-events: none;
+          background: grey;
+      }
+      #buttons button {
+        margin-top:20px;
+        padding:10px;
+        background:#000;
+        color:#FFF;
+        border:0;
+        font-size:14px;
+        text-transform:uppercase;
+        font-weight:bold;
+        outline:none;
+        width:100%;
+        float:left;
+      }
+      .gotolink {
+        text-align: center;
+        width: 100%;
+        float: left;
+        padding: 20px;
+      }
+      img {
+        max-width:150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div id="logo">
+        Remote
+      </div>
+      <div id="buttons">
+          <button data-video="heart" class="heart button">Heart</button>
+          <button data-video="kiss" class="kiss button">Kiss</button>
+          <button data-video="hug" class="hug button">Hug</button>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+  </body>
+</html>
